@@ -106,8 +106,11 @@
   14003: "set_temp_bit_flag", // params: (int: FlagID, int: value; must be between 0-1)
   14004: "get_temp_bit_flag", // params: FlagID; returns a value between 0-1 corresponding to the value of said TempBitFlag (FLAG_INFO_3)
   14005: "set_temp_byte_flag", // params: (int: FlagID, int: value; must be between 0-255)
-  14006: "get_temp_byte_flag" // params: FlagID; returns a value between 0-255 corresponding to the value of said TempByteFlag (FLAG_INFO_4)
+  14006: "get_temp_byte_flag", // params: FlagID; returns a value between 0-255 corresponding to the value of said TempByteFlag (FLAG_INFO_4)
+ // update also 22th November 2025
+  15138: "get_item_property" // params: ItemID (can be hashed string or hashed int), ItemProperty (num from 0-15; 9 calls GetItemStockNum aka it gets the amount the player has of that item and 10 calls GetItemEquipNum)
 }
+
 
 
 
