@@ -113,8 +113,10 @@
   15610: "load_vfx", // loads an effect by it's VisualEffectID i.e. load_vfx("sy2301_01a0"h) or load_vfx(0x12345678h)
   15160: "get_yokai_property", // params: (int: property, ParamID) gets a property of said yokai's species (this obtains inter-yokai properties like the Yo-kai's attribute or ID, but not per-yokai stats like level and XP); 26 gets the Yo-kai's BaseID and 25 gets the Yo-kai's name linked to the BaseID, in yw1 propeties 0-27 but properties up to 30 are known to exist in yw2
   5033: "assign_advanced_ui_callback", // params: (hash: UIElementHash aka CRC32 of filename, string: normalfunction, string: touchfunction, string: clickfunction) i.e. assign_advanced_ui_callback($local2, "MenuList_MatrixNormal", "MenuList_MatrixTouch", "Menu_MatrixClick"); // assign_advanced_ui_callback; $local2 is the CRC32 hash of the button object's name
-  5032: "assign_basic_ui_callback" // params: same as assign_advanced_ui_callback but dosent have clickfunction
+  5032: "assign_basic_ui_callback", // params: same as assign_advanced_ui_callback but dosent have clickfunction
+  5112: "set_colour" // sets the colour of a UI element params: (hash/string: UIElementID/Name, float: red, float: green, float: blue)
 }
+
 
 
 
