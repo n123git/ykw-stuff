@@ -88,9 +88,9 @@
   13668 : "set_bike_state",
   13010 : "display_chapter_title", //chapter number
   15310 : "heal_party", //no params
-  13792 : "set_game_variable",
+  13792 : "set_game_variable", // params: (unk: unk, int: unk2, string: variableName, unk: unk4)
   15599: "get_watch_type",
-  1103 : "get_controller_input", //unknown
+  1103 : "get_controller_input", // param: (int: key)
   13101 : "change_character", //parameters (0, baseid)
   13733 : "get_menu_text",
   14000 : "set_global_bit_flag", //(flagID,value; must be 0 or 1)
@@ -107,9 +107,15 @@
   14004: "get_temp_bit_flag", // params: FlagID; returns a value between 0-1 corresponding to the value of said TempBitFlag (FLAG_INFO_3)
   14005: "set_temp_byte_flag", // params: (int: FlagID, int: value; must be between 0-255)
   14006: "get_temp_byte_flag", // params: FlagID; returns a value between 0-255 corresponding to the value of said TempByteFlag (FLAG_INFO_4)
- // update also 22th November 2025
-  15138: "get_item_property" // params: ItemID (can be hashed string or hashed int), ItemProperty (int from 0-15; 9 calls GetItemStockNum aka it gets the amount the player has of that item and 10 calls GetItemEquipNum)
+  // update also 22th November 2025
+  15138: "get_item_property", // params: ItemID (can be hashed string or hashed int), ItemProperty (int from 0-15; 9 calls GetItemStockNum aka it gets the amount the player has of that item and 10 calls GetItemEquipNum)
+  // update: 25th November 2025
+  15610: "load_vfx", // loads an effect by it's VisualEffectID i.e. load_vfx("sy2301_01a0"h) or load_vfx(0x12345678h)
+  15160: "get_yokai_property", // params: (int: property, ParamID) gets a property of said yokai's species (this obtains inter-yokai properties like the Yo-kai's attribute or ID, but not per-yokai stats like level and XP); 26 gets the Yo-kai's BaseID and 25 gets the Yo-kai's name linked to the BaseID, in yw1 propeties 0-27 but properties up to 30 are known to exist in yw2
+  5033: "assign_advanced_ui_callback", // params: (hash: UIElementHash aka CRC32 of filename, string: normalfunction, string: touchfunction, string: clickfunction) i.e. assign_advanced_ui_callback($local2, "MenuList_MatrixNormal", "MenuList_MatrixTouch", "Menu_MatrixClick"); // assign_advanced_ui_callback; $local2 is the CRC32 hash of the button object's name
+  5032: "assign_basic_ui_callback" // params: same as assign_advanced_ui_callback but dosent have clickfunction
 }
+
 
 
 
