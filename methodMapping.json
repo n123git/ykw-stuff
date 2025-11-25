@@ -92,7 +92,7 @@
   15599: "get_watch_type",
   1103 : "get_controller_input", // param: (int: key)
   13101 : "change_character", //parameters (0, baseid)
-  13733 : "get_menu_text",
+  13733 : "get_menu_text", // params: (string: CfgBinName, hash: TextID) i.e. get_menu_text("winposeshopmenu_text", $local2) opens data\res\text\menuwinposeshopmenu_text_engb.cfg.bin and returns the string with TextID $local2
   14000 : "set_global_bit_flag", //(flagID,value; must be 0 or 1)
   // update 22th November 2025 (22/11/2025); official terms used for game-specific subs i.e. GlobalBitFlag is the official name confirmed by CExpression funcs
   14011 : "set_global_byte_flag", // params: (int: FlagID, int: value; must be between 0-255)
@@ -115,6 +115,7 @@
   5033: "assign_advanced_ui_callback", // params: (hash: UIElementHash aka CRC32 of filename, string: normalfunction, string: touchfunction, string: clickfunction) i.e. assign_advanced_ui_callback($local2, "MenuList_MatrixNormal", "MenuList_MatrixTouch", "Menu_MatrixClick"); // assign_advanced_ui_callback; $local2 is the CRC32 hash of the button object's name
   5032: "assign_basic_ui_callback" // params: same as assign_advanced_ui_callback but dosent have clickfunction
 }
+
 
 
 
