@@ -119,9 +119,11 @@
   14132: "get_trophy_property", // params: (int: trophyIndex, int: property) property 0 returns the TrophyID, property 1 gets the TextID, property 2 gets icon index/rarity so 0 for bronze, 1 for silver and 2 for gold, and property 3 is unknown
   14130: "get_trophies", // no params
   14800: "play_music", // param: (string: musicName)
-  5002: "create_element" // params: (string: elementName, int: screen, int: XPos, int: YPos); screen of 0 = top, 1 = bottom
+  15117: "give_mystery_item", // Gives the player items with the VoltXtreme dialogue. params: (hash: ItemID, int: ItemQuantity)
+  5002: "create_element" // params: (string: elementName, int: screen, int: XPos, int: YPos, opt int: unk5, opt string: ClickEvent, opt string: ClickTextureA, opt string: ClickTextureB); screen of 0 = top, 1 = bottom
 
 }
+
 
 
 
