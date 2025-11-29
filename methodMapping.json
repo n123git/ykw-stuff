@@ -117,12 +117,14 @@
   5112: "set_colour", // sets the colour of a UI element params: (hash/string: UIElementID/Name, float: red, float: green, float: blue)
   // update: 29th November 2025
   14132: "get_trophy_property", // params: (int: trophyIndex, int: property) property 0 returns the TrophyID, property 1 gets the TextID, property 2 gets icon index/rarity so 0 for bronze, 1 for silver and 2 for gold, and property 3 is unknown
-  14130: "get_trophies", // no params
+  14130: "get_trophies", // params: (opt int: TrophyRarity; 0 = Bronze, 1 = Silver, 2 = Gold) returns the amount of trophies
+  14131: "get_obtained_trophies", // params: (opt int: TrophyRarity; 0 = Bronze, 1 = Silver, 2 = Gold) returns the amount of obtained trophies
   14800: "play_music", // param: (string: musicName)
   15117: "give_mystery_item", // Gives the player items with the VoltXtreme dialogue. params: (hash: ItemID, int: ItemQuantity)
   5002: "create_element" // params: (string: elementName, int: screen, int: XPos, int: YPos, opt int: unk5, opt string: ClickEvent, opt string: ClickTextureA, opt string: ClickTextureB); screen of 0 = top, 1 = bottom
 
 }
+
 
 
 
