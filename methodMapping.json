@@ -117,9 +117,11 @@
   5112: "set_colour", // sets the colour of a UI element params: (hash/string: UIElementID/Name, float: red, float: green, float: blue)
   // update: 29th November 2025
   14132: "get_trophy_property", // params: (int: trophyIndex, int: property) property 0 returns the TrophyID, property 1 gets the TextID, property 2 gets icon index/rarity so 0 for bronze, 1 for silver and 2 for gold, and property 3 is unknown
-  14130: "get_trophies" // no params
+  14130: "get_trophies", // no params
+  14800: "play_music" // param: (string: musicName)
 
 }
+
 
 
 
