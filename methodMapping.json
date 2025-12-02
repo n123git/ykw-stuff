@@ -125,8 +125,11 @@
   // update: 30th November 2025
   3510: "is_element_init", // params: (string: elementName) checks if an element has been initialised
   // update 1st December 2025
-  3010: "set_overworld_rendering_composite_mode" // params: (int: screenMode, opt int: modeArg)
+  3010: "set_overworld_rendering_composite_mode", // params: (int: screenMode, opt int: modeArg) this has too many cases to explain here
+  // update 2nd December 2025
+  2109: "lock_user_input" // params: (int: shouldLock) if 0 allows/unlocks user input if 1, locks it; used during UI modal loading to prevent race condition bugs
 }
+
 
 
 
