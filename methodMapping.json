@@ -127,8 +127,11 @@
   // update 1st December 2025
   3010: "set_overworld_rendering_composite_mode", // params: (int: screenMode, opt int: modeArg) this has too many cases to explain here
   // update 2nd December 2025
-  2109: "lock_user_input" // params: (int: shouldLock) if 0 allows/unlocks user input if 1, locks it; used during UI modal loading to prevent race condition bugs
+  2109: "lock_user_input", // params: (int: shouldLock) if 0 allows/unlocks user input if 1, locks it; used during UI modal loading to prevent race condition bugs
+  // update 8th December 2025
+  13903: "set_quest_phase" // params: (int: QuestID, int: QuestPhase) sets the QuestPhase of a Quest to the specified value; note it's up to each quest to decide what a specific questphase means; with the exception of phase of 255 which, for any quest, means that quest is complete
 }
+
 
 
 
