@@ -144,8 +144,10 @@
   1214: "get_touch_delta_x", // no params
   1215: "get_touch_delta_y", // no params
   1130: "get_analog_x", // no params
-  1131: "get_analog_y" // no params
+  1131: "get_analog_y", // no params
+  15114: "get_equipped_wallpaper" // no params; in yw2 it's 1: Cool Blue, 2: Antique Blossoms etc
 }
+
 
 
 
