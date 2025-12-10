@@ -136,7 +136,7 @@
   1101: "get_controller_input2", // same params as other variant
   // update 10th December 2025
   5009: "does_element_exist", // params: (hash/string: ElementID/ElementName)
-  5001: "delete_element" // params: (hash/string: ElementID/ElementName), note: it is highly recommended to use does_element_exist first before attempting to delete an element
+  5001: "delete_element", // params: (hash/string: ElementID/ElementName), note: it is highly recommended to use does_element_exist first before attempting to delete an element
   1201: "is_touchscreen_pressed", // no params
   1210: "get_touch_xpos", // no params
   1211: "get_touch_ypos", // no params
@@ -145,4 +145,5 @@
   1130: "get_analog_x", // no params
   1131: "get_analog_y" // no params
 }
+
 
