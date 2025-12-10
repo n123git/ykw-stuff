@@ -123,7 +123,7 @@
   15117: "give_item", // Gives the player items. Warning: this dosen't safely handle item limits use the reference function AddItem (defined in prog common) instead as it handles it properly. params: (hash: ItemID, int: ItemQuantity)
   5002: "create_element", // params: (string: elementName, int: screen, int: XPos, int: YPos, opt int: unk5, opt string: ClickEvent, opt string: ClickTextureA, opt string: ClickTextureB); screen of 0 = top, 1 = bottom
   // update: 30th November 2025
-  3510: "is_element_init", // params: (string: elementName) checks if an element has been initialised
+  3510: "is_resource_init", // params: (string: elementName) checks if an element has been initialised
   // update 1st December 2025
   3010: "set_overworld_rendering_composite_mode", // params: (int: screenMode, opt int: modeArg) this has too many cases to explain here
   // update 2nd December 2025
@@ -135,6 +135,7 @@
   16527: "load_xi2", // params: (string: elName, string: FilePath)
   1101: "get_controller_input2" // same params as other variant
 }
+
 
 
 
