@@ -145,8 +145,10 @@
   1215: "get_touch_delta_y", // no params
   1130: "get_analog_x", // no params
   1131: "get_analog_y", // no params
-  15114: "get_equipped_wallpaper" // no params; in yw2 it's 1: Cool Blue, 2: Antique Blossoms etc
+  15114: "get_equipped_wallpaper", // no params; in yw2 it's 1: Cool Blue, 2: Antique Blossoms etc
+  14151: "set_settings_data" // params: (int: setting, int: value) in yw2, setting 0 = Wallpaper, 1 = Music, 2 = SFX, 3 = Show Clock, 4 = Objective Appearence 5 = Marker Appearence
 }
+
 
 
 
