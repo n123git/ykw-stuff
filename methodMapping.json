@@ -1,5 +1,6 @@
 {
   20: "call", // return 0 (Calls another method by name or crc with all arguments, ignoring the first one)
+  21: "call2", // alias for sub20 (executes the same exact code)
   40: "typeof", // return 0 (Gets the type of the static or variable value)
   500: "log", // return 0 (no-op)
   501: "format", // return 0 (Formats a string like printf)
@@ -145,5 +146,6 @@
   1130: "get_analog_x", // no params
   1131: "get_analog_y" // no params
 }
+
 
 
