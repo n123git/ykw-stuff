@@ -133,8 +133,12 @@
   3433: "load_anmc_xa2", // params: (string: FilePath)
   // update 9th December 2025
   16527: "load_xi2", // params: (string: elName, string: FilePath)
-  1101: "get_controller_input2" // same params as other variant
+  1101: "get_controller_input2", // same params as other variant
+  // update 10th December 2025
+  5009: "does_element_exist", // params: (hash/string: ElementID/ElementName)
+  5001: "delete_element" // params: (hash/string: ElementID/ElementName), note: it is highly recommended to use does_element_exist first before attempting to delete an element
 }
+
 
 
 
