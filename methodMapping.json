@@ -146,10 +146,12 @@
   1130: "get_analog_x", // no params
   1131: "get_analog_y", // no params
   15114: "get_equipped_wallpaper", // no params; in yw2 it's 1: Cool Blue, 2: Antique Blossoms etc
-  14151: "set_settings_data" // params: (int: setting, int: value) in yw2, setting 0 = Wallpaper, 1 = Music, 2 = SFX, 3 = Show Clock, 4 = Objective Appearence 5 = Marker Appearence
+  14151: "set_settings_data", // params: (int: setting, int: value) in yw2, setting 0 = Wallpaper, 1 = Music, 2 = SFX, 3 = Show Clock, 4 = Objective Appearence 5 = Marker Appearence
+  // update 11th December 2025
+  3101: "get_download_status", // no params
+  3102: "reset_download_error_state", // no params
+  3110: "get_download_entry_count", // no params; returns the amount of download entries
+  3111: "get_download_entry" // 4 params; too complicated to explain
+  13030: "has_accepted_3ds_network_eula", // no params; returns 1 if you have else 0
+  13031: "prompt_3ds_network_eula_accept_screen", // makes the Ninteno 3DS Network TOS screen appear which will prompt you to accept
 }
-
-
-
-
-
