@@ -30,7 +30,7 @@
   16526: "load_xa",
   3702: "load_xc",
   14051: "reserve_jump_map_2", //params: map name, startingPositionX, startingPositionY, startingPositionZ
-  16532: "get_game_region", // no params; gets the current locale (not reigon!) the full list is: JP (Japanese), EN (English), FR (French), DE (German), IT (Italian), ES (Spanish), ZH (Chinese), KO (Korean), NL (Dutch), PT (Portugese), RU (Russian), TW (Taiwanese)
+  16532: "get_game_locale", // params: (int: showExtended) if showExtended is falsy or undefined, it gets the current locale the full list is: jp (Japanese), en (English), fr (French), de (German), it (Italian), es (Spanish), zh (Chinese), ko (Korean), nl (Dutch), pt (Portugese), ru (Russian), tw (Taiwanese) but if it's 1 (truthy) it shows the lg variant too i.e. frca for French (Canada) or esus for Spanish (US) etc
   //Added Feb. 20th. Source: YW1 Mobile binary
   13734: "get_by_texttype",
   13735: "get_by_texttype_idx",
@@ -87,7 +87,7 @@
   // context clues
 
   13668 : "set_bike_state",
-  13010 : "display_chapter_title", //chapter number
+  13010 : "display_special_scene", // (uiNum, uiParam) for a uiNum of 0 it displays a chapter where uiParam is the chapter num
   15310 : "heal_party", //no params
   13792 : "set_game_variable", // params: (unk: unk, int: unk2, string: variableName, unk: unk4)
   15599: "get_watch_type",
@@ -155,3 +155,4 @@
   13030: "has_accepted_3ds_network_eula", // no params; returns 1 if you have else 0
   13031: "prompt_3ds_network_eula_accept_screen", // makes the Ninteno 3DS Network TOS screen appear which will prompt you to accept
 }
+
