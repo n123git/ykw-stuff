@@ -156,8 +156,12 @@
   13030: "has_accepted_3ds_network_eula", // no params; returns 1 if you have else 0
   13031: "prompt_3ds_network_eula_accept_screen", // makes the Ninteno 3DS Network TOS screen appear which will prompt you to accept
   // update 14th December 2025
-  2120: "get_delta_time" // no params; returns ms elapsed since last frame * 30
+  2120: "get_delta_time," // no params; returns ms elapsed since last frame * 30
+  // update 18th December 2025
+  13901: "get_watch_rank", // no params; 0 = E, 1 = D, 2 = C, 3 = B, 4 = A, 5 = S
+  13900: "set_watch_rank" // params: (int: rank) 0 = E, 1 = D, 2 = C, 3 = B, 4 = A, 5 = S
 }
+
 
 
 
