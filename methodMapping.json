@@ -38,8 +38,8 @@
   13750: "delete_res_text",
   15171: "set_play_data_tbox",
   15170: "create_tbox_ext",
-  15151: "get_player_name",
-  15150: "get_player_type",
+  15151: "get_player_name", // no params; returns the player name (string)
+  15150: "get_player_type", // no params; returns 2 if female (Katie/Hailey) otherwise the player is Male (Nate)
   15145: "is_not_obtain_item", // returns 1 if you have the max capacity of that item, params: (ItemID; can be a hashed string or hashed int)
   21302: "set_shadow_type",
   21301: "set_shadow_bone",
@@ -163,6 +163,7 @@
   13752: "show_special_modal", // params: (int: modal, int: unk, int: param) i.e. 17, 0, 5 shows UI congratulating the player for ranking up to rank S
   3402: "load_xi3" // params: (string: elName, string: filePath)
 }
+
 
 
 
