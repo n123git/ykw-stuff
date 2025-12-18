@@ -161,8 +161,9 @@
   13901: "get_watch_rank", // no params; 0 = E, 1 = D, 2 = C, 3 = B, 4 = A, 5 = S
   13900: "set_watch_rank", // params: (int: rank) 0 = E, 1 = D, 2 = C, 3 = B, 4 = A, 5 = S
   13752: "show_special_modal", // params: (int: modal, int: unk, int: param) i.e. 17, 0, 5 shows UI congratulating the player for ranking up to rank S
-  3402: "load_xi3"
+  3402: "load_xi3" // params: (string: elName, string: filePath)
 }
+
 
 
 
