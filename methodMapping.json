@@ -167,8 +167,10 @@
   14806: "stop_music", // params: (string: musicName)
   14809: "fade_out_music", // params: (string: musicName, float: duration)
   5430: "assign_resource", // params: (string/hash: elName, string/hash: resourceName, optional: sprX, optional: sprY)
+  5242: "move_element" // params: (string/hash: elName, int/float: XPos, int/float: Ypos)
   
 }
+
 
 
 
