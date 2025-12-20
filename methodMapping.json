@@ -167,9 +167,12 @@
   14806: "stop_music", // params: (string: musicName)
   14809: "fade_out_music", // params: (string: musicName, float: duration)
   5430: "assign_resource", // params: (string/hash: elName, string/hash: resourceName, optional: sprX, optional: sprY)
-  5242: "move_element" // params: (string/hash: elName, int/float: XPos, int/float: Ypos)
-  
+  5242: "move_element", // params: (string/hash: elName, int/float: XPos, int/float: Ypos)
+  13904: "get_quest_type", // params: (string/hash: QuestID) returns the QuestType; in YW2: 3 = Favor, 2 = Quest, 1 = Story Chapter
+  13903: "set_quest_phase" // params: (string/hash: QuestID, int: QuestPhase); official name converted into snake case for consistency
+  13902: "finalize_quest_completion" // params: (int: isFinalise) after completing a quest run sub13902(1)
 }
+
 
 
 
