@@ -161,8 +161,15 @@
   13901: "get_watch_rank", // no params; 0 = E, 1 = D, 2 = C, 3 = B, 4 = A, 5 = S
   13900: "set_watch_rank", // params: (int: rank) 0 = E, 1 = D, 2 = C, 3 = B, 4 = A, 5 = S
   13752: "show_special_modal", // params: (int: modal, int: unk, int: param) i.e. 17, 0, 5 shows UI congratulating the player for ranking up to rank S
-  3402: "load_xi3" // params: (string: elName, string: filePath)
+  3402: "load_xi3", // params: (string: elName, string: filePath)
+  // update 20th December 2025
+  14805: "is_music_playing", // params: (string: musicName)
+  14806: "stop_music", // params: (string: musicName)
+  14809: "fade_out_music", // params: (string: musicName, float: duration)
+  5430: "assign_resource", // params: (string/hash: elName, string/hash: resourceName, optional: sprX, optional: sprY)
+  
 }
+
 
 
 
