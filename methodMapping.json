@@ -172,8 +172,10 @@
   13903: "set_quest_phase", // params: (string/hash: QuestID, int: QuestPhase); official name converted into snake case for consistency
   13902: "finalize_quest_completion", // params: (int: isFinalise) after completing a quest run sub13902(1)
   // update 23rd December 2025
-  5005: "set_element_visibility" // finally decided to double check and document it; params: (hash/string: elName, int: visibility)
+  5005: "set_element_visibility", // finally decided to double check and document it; params: (hash/string: elName, int: visibility)
+  5045: "get_ui_element_property" // params: (uint/hash: elName, int: property)
 }
+
 
 
 
