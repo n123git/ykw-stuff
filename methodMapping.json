@@ -131,7 +131,7 @@
   2109: "lock_user_input", // params: (int: shouldLock) if 0 allows/unlocks user input if 1, locks it; used during UI modal loading to prevent race condition bugs
   // update 8th December 2025
   13903: "set_quest_phase", // params: (int: QuestID, int: QuestPhase) sets the QuestPhase of a Quest to the specified value; note it's up to each quest to decide what a specific questphase means; with the exception of phase of 255 which, for any quest, means that quest is complete
-  3433: "load_anmc_xa2", // params: (string: FilePath)
+  3433: "is_file_at_location", // params: (string: FilePath)
   // update 9th December 2025
   16527: "load_xi2", // params: (string: elName, string: FilePath)
   1101: "get_controller_input2", // same params as other variant
@@ -175,18 +175,3 @@
   5005: "set_element_visibility", // finally decided to double check and document it; params: (hash/string: elName, int: visibility)
   5045: "get_ui_element_property" // params: (uint/hash: elName, int: property)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
