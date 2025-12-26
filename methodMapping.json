@@ -173,5 +173,10 @@
   13902: "finalize_quest_completion", // params: (int: isFinalise) after completing a quest run sub13902(1)
   // update 23rd December 2025
   5005: "set_element_visibility", // finally decided to double check and document it; params: (hash/string: elName, int: visibility)
-  5045: "get_ui_element_property" // params: (uint/hash: elName, int: property)
+  5045: "get_ui_element_property", // params: (string/hash: elName, int: property)
+  // update 26th December 2025
+  5202: "scale_element", // params: (hash/string: elName, float: scaleX, float: scaleY)
+  5600: "set_anm_res", // params: (hash/string: elName, hash/string: anmRes)
+
 }
+
