@@ -177,6 +177,9 @@
   // update 26th December 2025
   5202: "scale_element", // params: (hash/string: elName, float: scaleX, float: scaleY)
   5600: "set_anm_res", // params: (hash/string: elName, hash/string: anmRes)
-
+  4143: "ctrl_camera_fov", // params: (0, int: fov (radians), transitionDurationScale, interpolation)
+  4302: "ctrl_camera_shake", // params: (0, float: amplitudeX, float: amplitudeY, float: durationScale, int: shakeType)
+  4161: "ctrl_camera_near_clip" // params: (0, float: nearClip)
 }
+
 
