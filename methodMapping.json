@@ -185,7 +185,10 @@
   5642: "attach_anm_element", // params: (parentEl, anmId, XPos, YPos)
   3501: "unload_resource", // params: (anmID)
   14802: "play_music2", // params: (musName)
+  6009: "is_resource_exist", // params: (resName)
+  6001: "delete_resource" // params: (resName)
 }
+
 
 
 
