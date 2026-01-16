@@ -186,8 +186,18 @@
   3501: "unload_resource", // params: (anmID)
   14802: "play_music2", // params: (musName)
   6009: "is_resource_exist", // params: (resName)
-  6001: "delete_resource" // params: (resName)
+  6001: "delete_resource", // params: (resName)
+  // update 16th Januray 2026
+  2106: "get_user_input_lock_state", // no params; getter version of lock_user_input()
+  5241: "get_element_drag_delta", // params: (elName, out_dx, out_dy) mutates the values
+  5052: "get_element_rect_bounds", // params: (elName, out_x, out_y, out_w, out_h) mutates the values
+  5008: "set_element_visibility2", // same params as set_element_visibility; differences are unclear (skips anim?)
+  5043: "bind_ui_event_callback", // params: (element, callback)
+  14803: "play_music3", // params: (musName)
+  13732: "get_system_text", // params: (TextID) returns the system text found at data\res\text\system_text_<locale>.cfg.bin associated with that ID
+  5911: "attach_text" // params: (hash/string: el, string: text)
 }
+
 
 
 
