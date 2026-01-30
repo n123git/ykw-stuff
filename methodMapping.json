@@ -149,8 +149,8 @@
   14150: "get_settings_data",  // params: (int: setting) in yw2, setting 0 = Wallpaper, 1 = Music, 2 = SFX, 3 = Show Clock, 4 = Objective Appearence 5 = Marker Appearence
   14151: "set_settings_data", // params: (int: setting, int: value) in yw2, setting 0 = Wallpaper, 1 = Music, 2 = SFX, 3 = Show Clock, 4 = Objective Appearence 5 = Marker Appearence
   // update 11th December 2025
-  13030: "has_accepted_3ds_network_eula", // no params; returns 1 if you have else 0
-  13031: "prompt_3ds_network_eula_accept_screen", // makes the Ninteno 3DS Network TOS screen appear which will prompt you to accept
+  13030: "get_3ds_network_eula_accept_state", // no params; returns 1 if you have else 0
+  13031: "set_3ds_network_eula_accept_state", // makes the Ninteno 3DS Network TOS screen appear which will prompt you to accept
   // update 14th December 2025
   2120: "get_delta_time", // no params; returns ms elapsed since last frame * 30
   // update 18th December 2025
@@ -193,6 +193,7 @@
   13732: "get_system_text", // params: (TextID) returns the system text found at data\res\text\system_text_<locale>.cfg.bin associated with that ID
   5911: "attach_text" // params: (hash/string: el, string: text)
 }
+
 
 
 
