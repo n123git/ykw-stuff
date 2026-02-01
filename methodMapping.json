@@ -163,7 +163,7 @@
   14806: "stop_music", // params: (string: musicName)
   14809: "fade_out_music", // params: (string: musicName, float: duration)
   5430: "assign_resource", // params: (string/hash: elName, string/hash: resourceName, optional: sprX, optional: sprY)
-  5242: "move_element", // params: (string/hash: elName, int/float: XPos, int/float: Ypos)
+  5242: "offset_element", // params: (string/hash: elName, int: XDelta, int: YDelta) moves the element from it's current position by XDelta piexls in the X-axis and YDelta pixels in the Y-axis
   13904: "get_quest_type", // params: (string/hash: QuestID) returns the QuestType; in YW2: 3 = Favor, 2 = Quest, 1 = Story Chapter
   13903: "set_quest_phase", // params: (string/hash: QuestID, int: QuestPhase); official name converted into snake case for consistency
   13902: "finalize_quest_completion", // params: (int: isFinalise) after completing a quest run sub13902(1)
@@ -195,6 +195,7 @@
   // update 1st February 2026
   2110: "run_engine_command" // I debated for a while as to how to handle this; params: (int: engineCommand, any: paramA, any: paramB...) handles things from asynchronous network ops to save file I/O and more!
 }
+
 
 
 
