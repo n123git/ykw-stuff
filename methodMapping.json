@@ -157,7 +157,7 @@
   13901: "get_watch_rank", // no params; 0 = E, 1 = D, 2 = C, 3 = B, 4 = A, 5 = S
   13900: "set_watch_rank", // params: (int: rank) 0 = E, 1 = D, 2 = C, 3 = B, 4 = A, 5 = S
   13752: "show_special_modal", // params: (int: modal, int: unk, int: param) i.e. 17, 0, 5 shows UI congratulating the player for ranking up to rank S
-  3402: "load_xi3", // params: (string: elName, string: filePath)
+  3402: "load_image", // params: (string: elName, string: filePath)
   // update 20th December 2025
   14805: "is_music_playing", // params: (string: musicName)
   14806: "stop_music", // params: (string: musicName)
@@ -176,7 +176,7 @@
   4143: "ctrl_camera_fov", // params: (0, int: fov (radians), transitionDurationScale, interpolation)
   4302: "ctrl_camera_shake", // params: (0, float: amplitudeX, float: amplitudeY, float: durationScale, int: shakeType)
   4161: "ctrl_camera_near_clip", // params: (0, float: nearClip)
-  3302: "load_xk", // params: (string/hash: resName, string: filePath) i.e. sub3302("mb_res_a_sky", "sky/default");
+  3302: "load_sky", // loads a sky (.xk) file params: (string/hash: resName, string: filePath) i.e. sub3302("mb_res_a_sky", "sky/default");
   // update 4th January 2026
   5642: "attach_anm_element", // params: (parentEl, anmId, XPos, YPos)
   3501: "unload_resource", // params: (anmID)
@@ -199,8 +199,10 @@
   13051: "sub_gamecoin_num", // params: (int: count) reduces the player's Play Coins by count. A negative count will do nothing and you cannot subtract past 0 Play Coins and a float input will get truncated to an integer (and the same range checks apply) - overflows do not work either (in short increasing playcoins is impossible)
   17000: "edit_font_style", // params: (hash/string: element, int: unkFlags, optional string: font, optional string/int: style?)
   5102: "set_element_opacity", // finally stopped being lazy and confirmed it so I can document it - params: (hash/string: element, float: opacity) 1f = fully opaque and 0f = invisible
-  5103: "set_element_opacity_fade" // params: (hash/string: element, float: TargetOpacity, int: FrameCount, optional int: unk3) 1f = fully opaque and 0f = invisible
+  5103: "set_element_opacity_fade", // params: (hash/string: element, float: TargetOpacity, int: FrameCount, optional int: unk3) 1f = fully opaque and 0f = invisible
+  3307: "sky_is_exist" // params: (string: skyName) checks if the sky is currently loaded
 }
+
 
 
 
