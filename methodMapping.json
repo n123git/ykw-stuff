@@ -197,8 +197,11 @@
   // update 2nd February 2026
   13050: "get_gamecoin_num", // no params; returns the amount of Play Coins the player has
   13051: "sub_gamecoin_num", // params: (int: count) reduces the player's Play Coins by count
-  17000: "edit_font_style" // params: (hash/string: element, int: unkFlags, optional string: font, optional string/int: style?)
+  17000: "edit_font_style", // params: (hash/string: element, int: unkFlags, optional string: font, optional string/int: style?)
+  5102: "set_element_opacity", // finally stopped being lazy and confirmed it so I can document it - params: (hash/string: element, float: opacity) 1f = fully opaque and 0f = invisible
+  5103: "set_element_opacity_fade" // params: (hash/string: element, float: TargetOpacity, int: FrameCount, optional int: unk3) 1f = fully opaque and 0f = invisible
 }
+
 
 
 
