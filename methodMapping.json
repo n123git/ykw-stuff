@@ -124,7 +124,7 @@
   15117: "give_item", // Gives the player items. Warning: this dosen't safely handle item limits use the reference function AddItem (defined in prog common) instead as it handles it properly. params: (hash: ItemID, int: ItemQuantity)
   5002: "create_element", // params: (string: elementName, int: screen, int: XPos, int: YPos, opt int: unk5, opt string: ClickEvent, opt string: ClickTextureA, opt string: ClickTextureB); screen of 0 = top, 1 = bottom
   // update: 30th November 2025
-  3510: "is_resource_initialised", // params: (string: elementName) checks if an element has been initialised
+  3510: "anm_is_exist", // params: (string: elementName) checks if an ANMC resource has been loaded
   // update 1st December 2025
   3010: "set_overworld_rendering_composite_mode", // params: (int: screenMode, opt int: modeArg) this has too many cases to explain here
   // update 2nd December 2025
@@ -202,6 +202,7 @@
   5103: "set_element_opacity_fade", // params: (hash/string: element, float: TargetOpacity, int: FrameCount, optional int: unk3) 1f = fully opaque and 0f = invisible
   3307: "sky_is_exist" // params: (string: skyName) checks if the sky is currently loaded
 }
+
 
 
 
