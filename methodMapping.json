@@ -193,8 +193,12 @@
   13732: "get_system_text", // params: (TextID) returns the system text found at data\res\text\system_text_<locale>.cfg.bin associated with that ID
   5911: "attach_text", // params: (hash/string: el, string: text)
   // update 1st February 2026
-  2110: "run_engine_command" // I debated for a while as to how to handle this; params: (int: engineCommand, any: paramA, any: paramB...) handles things from asynchronous network ops to save file I/O and more!
+  2110: "run_engine_command", // I debated for a while as to how to handle this; params: (int: engineCommand, any: paramA, any: paramB...) handles things from asynchronous network ops to save file I/O and more!
+  // update 2nd February 2026
+  13050: "get_gamecoin_num", // no params; returns the amount of Play Coins the player has
+  13051: "sub_gamecoin_num" // params: (int: count) reduces the player's Play Coins by count
 }
+
 
 
 
