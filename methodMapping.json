@@ -128,7 +128,7 @@
   // update 1st December 2025
   3010: "set_overworld_rendering_composite_mode", // params: (int: screenMode, opt int: modeArg) this has too many cases to explain here
   // update 2nd December 2025
-  2109: "lock_user_input", // params: (int: shouldLock) if 0 allows/unlocks user input if 1, locks it; used during UI modal loading to prevent race condition bugs
+  2109: "set_user_input_lock_state", // params: (int: shouldLock) if 0 allows/unlocks user input if 1, locks it; used during UI modal loading to prevent race condition bugs
   // update 8th December 2025
   13903: "set_quest_phase", // params: (int: QuestID, int: QuestPhase) sets the QuestPhase of a Quest to the specified value; note it's up to each quest to decide what a specific questphase means; with the exception of phase of 255 which, for any quest, means that quest is complete
   3433: "is_file_at_location", // params: (string: FilePath)
@@ -184,7 +184,7 @@
   6009: "is_resource_exist", // params: (resName)
   6001: "delete_resource", // params: (resName)
   // update 16th Januray 2026
-  2106: "get_user_input_lock_state", // no params; getter version of lock_user_input()
+  2106: "get_user_input_lock_state", // no params; getter version of set_user_input_lock_state()
   5241: "get_element_drag_delta", // params: (elName, out_dx, out_dy) mutates the values
   5052: "get_element_rect_bounds", // params: (elName, out_x, out_y, out_w, out_h) mutates the values
   5008: "set_element_visibility2", // same params as set_element_visibility; differences are unclear (skips anim?)
@@ -202,6 +202,7 @@
   5103: "set_element_opacity_fade", // params: (hash/string: element, float: TargetOpacity, int: FrameCount, optional int: unk3) 1f = fully opaque and 0f = invisible
   3307: "sky_is_exist" // params: (string: skyName) checks if the specified sky has been loaded
 }
+
 
 
 
