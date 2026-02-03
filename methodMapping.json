@@ -201,8 +201,11 @@
   5102: "set_element_opacity", // finally stopped being lazy and confirmed it so I can document it - params: (hash/string: element, float: opacity) 1f = fully opaque and 0f = invisible
   5103: "set_element_opacity_fade", // params: (hash/string: element, float: TargetOpacity, int: FrameCount, optional int: unk3) 1f = fully opaque and 0f = invisible
   3307: "sky_is_exist", // params: (string: skyName) checks if the specified sky has been loaded
-  15154: "is_in_party_member"
+  // update 3rd Februrary 2026
+  15154: "is_in_party_member",
+  15172: "get_tbox_item_info"
 }
+
 
 
 
