@@ -213,8 +213,10 @@
   14540: "set_filter_fade", // params: (hash/string: targetElement, float: intensity)
   14303: "start_white_fade_out", // params: (int: layer?, float: duration, int: isWait)
   14304: "start_white_fade_in", // params: (int: layer?, float: duration, int: isWait)
-  14305: "is_fade_not_over" // params: (int: layer?)
+  14305: "is_fade_not_over", // params: (int: layer?)
+  15118: "delete_item" // params: (string/hash: ItemID, int: ItemQuantity)
 }
+
 
 
 
