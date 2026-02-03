@@ -202,9 +202,12 @@
   5103: "set_element_opacity_fade", // params: (hash/string: element, float: TargetOpacity, int: FrameCount, optional int: unk3) 1f = fully opaque and 0f = invisible
   3307: "sky_is_exist", // params: (string: skyName) checks if the specified sky has been loaded
   // update 3rd Februrary 2026
-  15154: "is_in_party_member",
-  15172: "get_tbox_item_info"
+  15154: "is_in_party_member", // params: (hash/string: BaseID) checks if the player has atleast one medal of that Yo-kai
+  15172: "get_tbox_item_info", 
+  14095: "repop_encount_enemy", // no params; Alternatively RepopEncountEnemy() from prog common can be used.
+  2001: "return_title" // no params; immediately kicks the player back to the title screen without warning or saving - generally don't use this but if you do use ReturnTitle() from prog common as it handles 0x141DC04D for you
 }
+
 
 
 
