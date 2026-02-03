@@ -179,7 +179,7 @@
   3302: "load_sky", // loads a sky (.xk) file params: (string/hash: resName, string: filePath) i.e. sub3302("mb_res_a_sky", "sky/default");
   // update 4th January 2026
   5642: "attach_anm_element", // params: (parentEl, anmId, XPos, YPos)
-  3501: "unload_resource", // params: (anmID)
+  3501: "delete_resource", // params: (anmID)
   14802: "play_music2", // params: (musName)
   6009: "is_resource_exist", // params: (resName)
   6001: "delete_resource", // params: (resName)
@@ -216,6 +216,7 @@
   14305: "is_fade_not_over", // params: (int: layer?)
   15118: "delete_item" // params: (string/hash: ItemID, int: ItemQuantity)
 }
+
 
 
 
