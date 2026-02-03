@@ -4,7 +4,7 @@
   40: "typeof", // return 0 (Gets the type of the static or variable value)
   500: "log", // return 0 (no-op)
   501: "format", // return 0 (Formats a string like printf)
-  503: "substring", // return 0  (params: (string: text, int: endPos) Returns the first n chars of a string; crashes on a negative end pos and resets the variable it returns to on an end pos of 0)
+  503: "substring", // return 0  (params: (string: text, int: index) Returns the nth char of a string; returns undefined on a negative or out of range index)
   510: "parameter_count", // return 0 (returns the amount of input parameters of the current function)
   520: "random", // return 0 (Take one random from the n arguments and use it as the ceiling to create a random value)
   521: "crc16", // return 0 (0, the value of the argument, or the CRC16 of the string)
@@ -216,6 +216,7 @@
   14305: "is_fade_not_over", // params: (int: layer?)
   15118: "delete_item" // params: (string/hash: ItemID, int: ItemQuantity)
 }
+
 
 
 
