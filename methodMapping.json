@@ -27,7 +27,7 @@
   13609: "reserve_jump_map", //params: map name, startingPositionX, startingPositionY, startingPositionZ
   3502: "load_xi", // params: fileName (without extension) and relative file path; checks language fa (locale dependant) then the main fa to find it i.e. data/menu/mm_wmap
   13612: "load_battle_ev", //params: battle event id, battle map
-  16526: "load_xa",
+  16526: "load_anm",
   3702: "load_xc",
   14051: "reserve_jump_map_2", //params: map name, startingPositionX, startingPositionY, startingPositionZ
   16532: "get_game_locale", // params: (int: showExtended) if showExtended is falsy or undefined, it gets the current locale the full list is: jp (Japanese), en (English), fr (French), de (German), it (Italian), es (Spanish), zh (Chinese), ko (Korean), nl (Dutch), pt (Portugese), ru (Russian), tw (Taiwanese) but if it's 1 (truthy) it shows the lg variant too i.e. frca for French (Canada) or esus for Spanish (US) etc
@@ -203,5 +203,6 @@
   3307: "sky_is_exist", // params: (string: skyName) checks if the specified sky has been loaded
   15154: "is_in_party_member"
 }
+
 
 
