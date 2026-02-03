@@ -205,8 +205,17 @@
   15154: "is_in_party_member", // params: (hash/string: BaseID) checks if the player has atleast one medal of that Yo-kai
   15172: "get_tbox_item_info", 
   14095: "repop_encount_enemy", // no params; Alternatively RepopEncountEnemy() from prog common can be used.
-  2001: "return_title" // no params; immediately kicks the player back to the title screen without warning or saving - generally don't use this but if you do use ReturnTitle() from prog common as it handles 0x141DC04D for you
+  2001: "return_title", // no params; immediately kicks the player back to the title screen without warning or saving - generally don't use this but if you do use ReturnTitle() from prog common as it handles 0x141DC04D for you
+  14510: "create_boke_filter", // params: (hash/string: targetElement, float: intensity)
+  14511: "create_sepia_filter", // params: (hash/string: targetElement, float: intensity)
+  14512: "create_monochrome_filter", // params: (hash/string: targetElement, float: intensity)
+  14530: "delete_filter", // params: (hash/string: targetElement, float: unkNum)
+  14540: "set_filter_fade", // params: (hash/string: targetElement, float: intensity)
+  14303: "start_white_fade_out", // params: (int: layer?, float: duration, int: isWait)
+  14304: "start_white_fade_in", // params: (int: layer?, float: duration, int: isWait)
+  14305: "is_fade_not_over" // params: (int: layer?)
 }
+
 
 
 
