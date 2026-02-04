@@ -165,7 +165,7 @@
   5430: "assign_resource", // params: (string/hash: elName, string/hash: resourceName, optional: sprX, optional: sprY)
   5247: "offset_element", // params: (string/hash: elName, int: XDelta, int: YDelta) moves the element from it's current position by XDelta piexls in the X-axis and YDelta pixels in the Y-axis
   13904: "get_quest_type", // params: (string/hash: QuestID) returns the QuestType; in YW2: 3 = Favor, 2 = Quest, 1 = Story Chapter
-  13902: "finalize_quest_completion", // params: (int: isFinalise) after completing a quest run sub13902(1)
+  13902: "finalize_state_change", // params: (int: isFinalise) after completing a quest run sub13902(1) - also used for QRs
   // update 23rd December 2025
   5005: "set_element_visibility", // finally decided to double check and document it; params: (hash/string: elName, int: visibility)
   5045: "get_ui_element_property", // params: (string/hash: elName, int: property)
@@ -223,7 +223,9 @@
   13760: "get_system_text2", // params: (hash/string: TextID, int: Number) set Number to 0 unless you need it - similar behaviour to get_system_text()
   13623: "is_event_loading",
   5242: "move_element", // params: (string/hash: elName, int: XPos, int: YPos) moves the element to the specified position
+  
 }
+
 
 
 
