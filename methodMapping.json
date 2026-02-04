@@ -215,8 +215,10 @@
   14304: "start_white_fade_in", // params: (int: layer?, float: duration, int: isWait)
   14305: "is_fade_not_over", // params: (int: layer?)
   15118: "delete_item", // params: (string/hash: ItemID, int: ItemQuantity)
-  14804: "play_music4" // params: (musName) - seems to be mainly for sfx
+  14804: "play_music4", // params: (musName) - seems to be mainly for sfx
+  15300: "set_yokai_level" // params: (hash: Yo-kai Handle, int: level)
 }
+
 
 
 
