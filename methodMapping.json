@@ -181,7 +181,7 @@
   3501: "delete_resource", // params: (anmID)
   14802: "play_music2", // params: (musName)
   6009: "is_resource_exist", // params: (resName)
-  6001: "delete_resource", // params: (resName)
+  6001: "delete_resource2", // params: (resName)
   // update 16th Januray 2026
   2106: "get_user_input_lock_state", // no params; getter version of set_user_input_lock_state()
   5241: "get_element_drag_delta", // params: (elName, out_dx, out_dy) mutates the values
@@ -219,3 +219,4 @@
   15300: "set_yokai_level", // params: (hash: Yo-kai Handle, int: level)
   15102: "create_yokai_handle" // returns handle, params: (hash: ParamID, int: unk set to 2, int: unk set to 0, int: unk set to 3, int: unk set to 0, int: unk set to -1, int: unk set to 1
 }
+
