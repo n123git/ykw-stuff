@@ -216,8 +216,10 @@
   14305: "is_fade_not_over", // params: (int: layer?)
   15118: "delete_item", // params: (string/hash: ItemID, int: ItemQuantity)
   14804: "play_music4", // params: (musName) - seems to be mainly for sfx
-  15300: "set_yokai_level" // params: (hash: Yo-kai Handle, int: level)
+  15300: "set_yokai_level", // params: (hash: Yo-kai Handle, int: level)
+  15102: "create_yokai_handle" // returns handle, params: (hash: ParamID, int: unk set to 2, int: unk set to 0, int: unk set to 3, int: unk set to 0, int: unk set to -1, int: unk set to 1
 }
+
 
 
 
