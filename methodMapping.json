@@ -165,7 +165,6 @@
   5430: "assign_resource", // params: (string/hash: elName, string/hash: resourceName, optional: sprX, optional: sprY)
   5242: "offset_element", // params: (string/hash: elName, int: XDelta, int: YDelta) moves the element from it's current position by XDelta piexls in the X-axis and YDelta pixels in the Y-axis
   13904: "get_quest_type", // params: (string/hash: QuestID) returns the QuestType; in YW2: 3 = Favor, 2 = Quest, 1 = Story Chapter
-  13903: "set_quest_phase", // params: (string/hash: QuestID, int: QuestPhase); official name converted into snake case for consistency
   13902: "finalize_quest_completion", // params: (int: isFinalise) after completing a quest run sub13902(1)
   // update 23rd December 2025
   5005: "set_element_visibility", // finally decided to double check and document it; params: (hash/string: elName, int: visibility)
@@ -220,17 +219,3 @@
   15300: "set_yokai_level", // params: (hash: Yo-kai Handle, int: level)
   15102: "create_yokai_handle" // returns handle, params: (hash: ParamID, int: unk set to 2, int: unk set to 0, int: unk set to 3, int: unk set to 0, int: unk set to -1, int: unk set to 1
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
