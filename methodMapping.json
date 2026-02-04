@@ -218,7 +218,10 @@
   // update 4th Februrary 2026
   15300: "set_yokai_level", // params: (hash: Yo-kai Handle, int: level)
   15102: "create_yokai_handle", // returns handle, params: (hash: ParamID, int: unk set to 2, int: unk set to 0, int: unk set to 3, int: unk set to 0, int: unk set to -1, int: unk set to 1
-  15912: "minigame_get_item" // params: (hash: outItemID, int: outQuantity)
+  15912: "minigame_get_item", // params: (hash: outItemID, int: outQuantity)
+  13407: "play_anim", // params: (hash/string: Actor, string: animName, int: unk, float: duration?)
+  13760: "get_system_text2" // params: (hash/string: TextID, int: Number) set Number to 0 unless you need it - similar behaviour to get_system_text()
 }
+
 
 
