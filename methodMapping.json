@@ -223,8 +223,10 @@
   13760: "get_system_text2", // params: (hash/string: TextID, int: Number) set Number to 0 unless you need it - similar behaviour to get_system_text()
   13623: "is_event_loading",
   5242: "move_element", // params: (string/hash: elName, int: XPos, int: YPos) moves the element to the specified position
-  
+  // update 5th Februrary 2026
+  5622: "set_anm_res2", // params: (hash/string: elName, hash/string: anmRes)
 }
+
 
 
 
