@@ -238,5 +238,7 @@
   6103: "apply_blink_effect", // params: (hash/string: target, float: intensity, float: frameDuration, int: unk3) - works on models may work on other elements
   5100: "is_element_animation_occuring", // params: (hash/string: targetElement) returns 1 if an animation is occuring else 0
   14808: "smooth_end_music2", // params: (string: musicName, optional int: fadeTime)
-  14810: "get_current_music" // no params; used with 14808 in StopCurrentBGM (defined @ progcommon)
+  14810: "get_current_music", // no params; used with 14808 in StopCurrentBGM (defined @ progcommon)
+  15340: "get_party_num" // no params; returns the amount of Yo-kai the player can befriend without taking into account 0x0646F45E - use GetPartyMemberMax from prog menu instead
 }
+
