@@ -160,7 +160,7 @@
   3402: "load_image", // params: (string: elName, string: filePath)
   // update 20th December 2025
   14805: "is_music_playing", // params: (string: musicName)
-  14806: "stop_music", // params: (string: musicName)
+  14806: "smooth_end_music", // params: (string: musicName, optional float: fadeTime, optional int: stepCount)
   14809: "fade_out_music", // params: (string: musicName, float: duration)
   5430: "assign_resource", // params: (string/hash: elName, string/hash: resourceName, optional: sprX, optional: sprY)
   5247: "offset_element", // params: (string/hash: elName, int: XDelta, int: YDelta) moves the element from it's current position by XDelta piexls in the X-axis and YDelta pixels in the Y-axis
@@ -239,6 +239,7 @@
   5100: "is_element_animation_occuring" // params: (hash/string: targetElement) returns 1 if an animation is occuring else 0
 
 }
+
 
 
 
