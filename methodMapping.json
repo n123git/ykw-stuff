@@ -209,7 +209,7 @@
   14511: "create_sepia_filter", // params: (hash/string: targetElement, float: intensity)
   14512: "create_monochrome_filter", // params: (hash/string: targetElement, float: intensity)
   14530: "delete_filter", // params: (hash/string: targetElement, float: unkNum)
-  14540: "set_filter_fade", // params: (hash/string: targetElement, float: intensity)
+  14540: "set_filter_fade", // params: (hash/string: targetElement, float: intensity)12
   14303: "start_white_fade_out", // params: (int: layer?, float: duration, int: isWait)
   14304: "start_white_fade_in", // params: (int: layer?, float: duration, int: isWait)
   14305: "is_fade_not_over", // params: (int: layer?)
@@ -236,15 +236,7 @@
   14044: "get_weather_now", // no params; official name
   14041: "get_weather_event_state", // params: (int: weatherEvent)
   6103: "apply_blink_effect", // params: (hash/string: target, float: intensity, float: frameDuration, int: unk3) - works on models may work on other elements
-  5100: "is_element_animation_occuring" // params: (hash/string: targetElement) returns 1 if an animation is occuring else 0
-
+  5100: "is_element_animation_occuring", // params: (hash/string: targetElement) returns 1 if an animation is occuring else 0
+  14808: "smooth_end_music2", // params: (string: musicName, optional int: fadeTime)
+  14810: "get_current_music" // no params; used with 14808 in StopCurrentBGM (defined @ progcommon)
 }
-
-
-
-
-
-
-
-
-
