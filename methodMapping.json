@@ -241,8 +241,13 @@
   14810: "get_current_music", // no params; used with 14808 in StopCurrentBGM (defined @ progcommon)
   15340: "get_party_num", // no params; returns the amount of Yo-kai the player can befriend without taking into account 0x0646F45E - use GetPartyMemberMax from prog menu instead
   3420: "get_image_width", // params: (string/hash: resourceName) returns int: imageWidth in pixels
-  3421: "get_image_height" // params: (string/hash: resourceName) returns int: imageHeight in pixels
+  3421: "get_image_height", // params: (string/hash: resourceName) returns int: imageHeight in pixels
+  // update 8th Februrary 2026
+  4002: "register_camera", // params: (string: cameraName, int: cameraType)
+  5113: "set_tint_animated" // params: (el/string: elementName, float: red, float: green, float: blue, int: duration, int: animType)
+  
 }
+
 
 
 
