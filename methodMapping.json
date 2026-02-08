@@ -244,9 +244,11 @@
   3421: "get_image_height", // params: (string/hash: resourceName) returns int: imageHeight in pixels
   // update 8th Februrary 2026
   4002: "register_camera", // params: (string: cameraName, int: cameraType)
-  5113: "set_tint_animated" // params: (el/string: elementName, float: red, float: green, float: blue, int: duration, int: animType)
-  
+  5113: "set_tint_animated", // params: (hash/string: elementName, float: red, float: green, float: blue, int: duration, int: animType)
+  16510: "load_image_from_filepath", // params: (hash/string: elementName, string: filePath) e.g. 	$local1 = sub16510($local2, "data/menu/img/<LG>/link_image00");
+  15226: "get_local_link_id" // no params; returns a CRC-32 ID that seems to be console specific i.e. maybe hash of LocalFriendCodeSeed - idk too lazy to check ;p
 }
+
 
 
 
