@@ -28,7 +28,7 @@
   3502: "load_xi", // params: fileName (without extension) and relative file path; checks language fa (locale dependant) then the main fa to find it i.e. data/menu/mm_wmap
   13612: "load_battle_ev", //params: battle event id, battle map
   16526: "load_anm",
-  3702: "load_xc",
+  3702: "load_model_by_filepath",
   14051: "reserve_jump_map_2", //params: map name, startingPositionX, startingPositionY, startingPositionZ
   16532: "get_game_locale", // params: (int: showExtended) if showExtended is falsy or undefined, it gets the current locale the full list is: jp (Japanese), en (English), fr (French), de (German), it (Italian), es (Spanish), zh (Chinese), ko (Korean), nl (Dutch), pt (Portugese), ru (Russian), tw (Taiwanese) but if it's 1 (truthy) it shows the lg variant too i.e. frca for French (Canada) or esus for Spanish (US) etc
   //Added Feb. 20th. Source: YW1 Mobile binary
@@ -245,9 +245,10 @@
   // update 8th Februrary 2026
   4002: "register_camera", // params: (string: cameraName, int: cameraType)
   5113: "set_tint_animated", // params: (hash/string: elementName, float: red, float: green, float: blue, int: duration, int: animType)
-  16510: "load_image_from_filepath", // params: (hash/string: elementName, string: filePath) e.g. 	$local1 = sub16510($local2, "data/menu/img/<LG>/link_image00");
+  16510: "load_image_by_filepath"/, // params: (hash/string: elementName, string: filePath) e.g. 	$local1 = sub16510($local2, "data/menu/img/<LG>/link_image00");
   15226: "get_local_link_id" // no params; returns a CRC-32 ID that seems to be console specific i.e. maybe hash of LocalFriendCodeSeed - idk too lazy to check ;p
 }
+
 
 
 
