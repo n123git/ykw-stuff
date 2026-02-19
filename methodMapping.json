@@ -23,7 +23,7 @@
   620: "math_asin", // return 0 (Gets the inverse sin of the value)
   621: "math_acos", // return 0 (Gets the inverse cos of the value)
   622: "math_atan", // return 0 (Gets the inverse tan of the value)
-  14040: "set_daytime",
+  14040: "set_env_time", // set_daytime -> set_env_time to match official name
   13609: "reserve_jump_map", //params: map name, startingPositionX, startingPositionY, startingPositionZ
   3502: "load_xi", // params: fileName (without extension) and relative file path; checks language fa (locale dependant) then the main fa to find it i.e. data/menu/mm_wmap
   13612: "load_battle_ev", //params: battle event id, battle map
@@ -248,6 +248,7 @@
   16510: "load_image_by_filepath", // params: (hash/string: elementName, string: filePath) e.g. 	$local1 = sub16510($local2, "data/menu/img/<LG>/link_image00");
   15226: "get_local_link_id" // no params; returns a CRC-32 ID that seems to be console specific i.e. maybe hash of LocalFriendCodeSeed - idk too lazy to check ;p
 }
+
 
 
 
