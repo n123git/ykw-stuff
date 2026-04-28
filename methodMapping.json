@@ -25,13 +25,13 @@
   622: "math_atan", // return 0 (Gets the inverse tan of the value)
   14040: "set_env_time", // set_daytime -> set_env_time to match official name
   13609: "reserve_jump_map", //params: map name, startingPositionX, startingPositionY, startingPositionZ
-  3502: "load_xi", // params: fileName (without extension) and relative file path; checks language fa (locale dependant) then the main fa to find it i.e. data/menu/mm_wmap
+  3502: "load_spr_image", // params: fileName (without extension) and relative file path; checks language fa (locale dependant) then the main fa to find it i.e. data/menu/mm_wmap, can be a .xa and a .xi - used to be called load_xi
   13612: "load_battle_ev", //params: battle event id, battle map
   16526: "load_anm_by_filepath",
   3702: "load_model",
   14051: "reserve_jump_map2", //params: map name, startingPositionX, startingPositionY, startingPositionZ
   16532: "get_game_locale", // params: (int: showExtended) if showExtended is falsy or undefined, it gets the current locale the full list is: jp (Japanese), en (English), fr (French), de (German), it (Italian), es (Spanish), zh (Chinese), ko (Korean), nl (Dutch), pt (Portugese), ru (Russian), tw (Taiwanese) but if it's 1 (truthy) it shows the lg variant too i.e. frca for French (Canada) or esus for Spanish (US) etc
-  //Added Feb. 20th. Source: YW1 Mobile binary
+  //Added Feb. 20th. (Official Names) Source: YW1 Mobile binary
   13734: "get_by_texttype",
   13735: "get_by_texttype_idx",
   13736: "build_res_text",
@@ -82,7 +82,7 @@
   24100: "map_filter_fade",
   21004: "delete_chara",
   23501: "img_delete",
-  13608: "reserve_event", // params: (string/hash: event, int: unk1, optional string: eventType?, optional int: unk3 )
+  13608: "reserve_event", // params: (string/hash: event, int: unk1, optional string: EventType, optional int: unk3 )
   
   // context clues
 
@@ -170,7 +170,7 @@
   5005: "set_element_visibility", // finally decided to double check and document it; params: (hash/string: elName, int: visibility)
   5045: "get_ui_element_property", // params: (string/hash: elName, int: property)
   // update 26th December 2025
-  5202: "scale_element", // params: (hash/string: elName, float: scaleX, float: scaleY)
+  5202: "set_element_scale", // params: (hash/string: elName, float: scaleX, float: scaleY)
   5600: "set_anm_res", // params: (hash/string: elName, hash/string: anmRes)
   4143: "ctrl_camera_fov", // params: (0, int: fov (radians), transitionDurationScale, interpolation)
   4302: "ctrl_camera_shake", // params: (0, float: amplitudeX, float: amplitudeY, float: durationScale, int: shakeType)
@@ -196,12 +196,12 @@
   // update 2nd February 2026
   13050: "get_gamecoin_num", // no params; returns the amount of Play Coins the player has
   13051: "sub_gamecoin_num", // params: (int: count) reduces the player's Play Coins by count. A negative count will do nothing and you cannot subtract past 0 Play Coins and a float input will get truncated to an integer (and the same range checks apply) - overflows do not work either (in short increasing playcoins is impossible)
-  17000: "edit_font_style", // params: (hash/string: element, int: unkFlags, optional string: font, optional string/int: style?)
+  17000: "set_text_style", // params: (hash/string: element, int: unkFlags, optional string: font, optional string/int: style?)
   5102: "set_element_opacity", // finally stopped being lazy and confirmed it so I can document it - params: (hash/string: element, float: opacity) 1f = fully opaque and 0f = invisible
   5103: "set_element_opacity_fade", // params: (hash/string: element, float: TargetOpacity, int: FrameCount, optional int: unk3) 1f = fully opaque and 0f = invisible
   3307: "sky_is_exist", // params: (string: skyName) checks if the specified sky has been loaded
   // update 3rd Februrary 2026
-  15154: "is_in_party_member", // params: (hash/string: BaseID) checks if the player has atleast one medal of that Yo-kai
+  15154: "get_chara_property_by_party_idx", // params: (int: Property, int: PartySlot) - propertyy undefined returns the handle, property 4 returns HP Rate (0f - 1f), 3 returns the actual HP, 5 is the same as property 4 but for the Soul Guage / params: (hash/string: BaseID) checks if the player has atleast one medal of that Yo-kai
   15172: "get_tbox_item_info", 
   14095: "repop_encount_enemy", // no params; Alternatively RepopEncountEnemy() from prog common can be used.
   2001: "return_title", // no params; immediately kicks the player back to the title screen without warning or saving - generally don't use this but if you do use ReturnTitle() from prog common as it handles 0x141DC04D for you
@@ -217,11 +217,11 @@
   14804: "play_music4", // params: (string/int: musName/trackNumber) - seems to be mainly for sfx
   // update 4th Februrary 2026
   15300: "set_yokai_level", // params: (hash: Yo-kai Handle, int: level)
-  15102: "create_yokai_handle", // returns handle, params: (hash: ParamID, int: unk set to 2, int: unk set to 0, int: unk set to 3, int: unk set to 0, int: unk set to -1, int: unk set to 1
+  15102: "create_yokai", // returns handle, params: (hash: ParamID, int: unk set to 2, int: unk set to 0, int: unk set to 3, int: unk set to 0, int: unk set to -1, int: unk set to 1)
   15912: "minigame_get_item", // params: (hash: outItemID, int: outQuantity)
   13407: "play_anim", // params: (hash/string: Actor, string: animName, int: unk, float: duration?)
   13760: "get_linked_system_text", // params: (hash/string: TextID, int: Number) set Number to 0 unless you need it - similar behaviour to get_system_text()
-  13623: "is_event_loading",
+  13623: "is_event_not_over", // no params; checks if the currently executing event is over or not - returns 1 if executing else if no event is playing 0
   5242: "move_element", // params: (string/hash: elName, int: XPos, int: YPos) moves the element to the specified position
   // update 5th Februrary 2026
   5622: "set_anm_res_animated", // params: (hash/string: elName, hash/string: anmRes, optional unsigned: animationNum)
@@ -236,7 +236,7 @@
   14044: "get_weather_now", // no params; official name
   14041: "get_weather_event_state", // params: (int: weatherEvent)
   6103: "apply_blink_effect", // params: (hash/string: target, float: intensity, float: frameDuration, int: unk3) - works on models may work on other elements
-  5100: "is_element_animation_occuring", // params: (hash/string: targetElement) returns 1 if an animation is occuring else 0
+  5100: "is_element_opacity_animation_occuring", // params: (hash/string: targetElement) returns 1 if an animation is occuring else 0
   14808: "smooth_end_bgm", // params: (string: musicName, optional int: fadeTime)
   14810: "get_current_bgm", // no params; used with 14808 in StopCurrentBGM (defined @ progcommon)
   15340: "get_party_num", // no params; returns the amount of Yo-kai the player can befriend without taking into account 0x0646F45E - use GetPartyMemberMax from prog menu instead
@@ -295,7 +295,7 @@
   4611: "register_camera2", // params: (string: cameraName, int: mode) type 0 = Locked (Normal), 1 = Unlocked (Preview?), 2 = Unk, 3 = Unk, 4 = Unk, 5+ = Unk
   13630: "run_menu_rpg", // params: (int: MenuCode, ...optional any: menuParams)
   13637: "is_menu_run_not_over", // no params;
-  13638: "set_menu_run_mode", // params: (int: MenuRunMode) - 0 when not in a menu/menu done, 1 when in SaveRun, not set for SaveRunEx or other menus, 2 for SaveRun2, 3 for SaveRun3
+  13638: "set_save_run_mode", // params: (int: SaveRunMode) - 1 when in SaveRun, not set for SaveRunEx or other menus, 2 for SaveRun2, 3 for SaveRun3 else 0
   2502: "bright_fade_camera", // params: (int: cameraLayer, float: intensity, numeric: duration)
   2509: "is_bright_fade_camera_not_over", // params: (int: cameraLayer)
   13230: "is_map_build_not_over", // no params;
@@ -321,6 +321,52 @@
   15602: "play_cmnd",
   15620: "drain_effect_all",
   6813: "is_effect_load_not_over",
-  3342: "load_font_by_filepath" // e.g. sub3342("mm_res_name_fnt", "fnt/ft_sml");
-  // 200, 51, 41
+  3342: "load_font_by_filepath", // e.g. sub3342("mm_res_name_fnt", "fnt/ft_sml");
+  15153: "get_party_chara_by_slot", // params: (int: slot) returns the BaseID of the character at the specified slot: 0 = Top-Left, 1 = Top-Middle, 2 = Top-Right, 3 = Bottom-Right, 4 = Bottom-Middle, 5 = Bottom-Left
+  13144: "get_chara_name_by", // params: (string/hash: BaseID) returns the Name of the character at the specified BaseID
+  15377: "is_volatile_party", // no params; official name
+  15350: "get_official_party_handle",
+  15351: "set_official_party_handle",
+  15378: "get_volatile_party_handle",
+  3301: "delete_sky",
+
+  // update 15th April 2026
+  15270: "get_player_metadata", // params: (int: Metadata) 5 = total play time in seconds
+  14016: "set_trophy_data", // params: (int: TrophyData, string/hash: TrophyID, int: value) TrophyData 1 = isAchieved/TrophyBitFlag e.g. to complete Trophy 0x6BE22B04 run sub14016(1, 0x6BE22B04h, 1);
+  //1110: "assign_controller_callback",
+  //1113: "get_user_input_data" // params: (int: Key)
+  3570: "init_sprite_container", // params: (string/hash: Element)
+  3571: "attach_sprite_element", // params: (string/hash: Element, string/hash: Resource, int: XOffset, int: YOffset, int: slot?)
+  3572: "finalize_sprite_container", // no params
+  5243: "tween_element", // params: (string/hash: Element, int: x, int: y, int: duration, int: mode?)
+  5240: "is_tween_not_over", // params: (string/hash: Element)
+  5246: "get_element_pos", // params: (string/hash: Element, variable: outX, variable: outY)
+  5013: "set_element_parent", // params: (string/hash: ChildElement, string/hash: ParentElement)
+  2211: "spawn_coroutine", // params: (string/hash: Function)
+  5003: "create_element2", // params: (string: elementName, int: screen, int: XPos, int: YPos); difference between this and create_element is currently unclear
+  14815: "get_current_mus", // no params; difference between this and get_current_bgm is currently unclear
+  18000: "get_stamina", // params: (variable: outStamina, opt variable: outState, opt variable: outDelta) sets outStamina to a float representing the stamina normalised to the 0f-1f range
+  13109: "get_character", // params: (int: characterType, opt: characterIdent) returns the handle of the specified character (1, 1) gets the player, (3, string/hash: BaseID) gets an NPC e.g., (3, "i002000") gets the medallium
+  13134: "get_camera_pos", // params: (variable: outX, variable: outY, variable: outZ)
+  4402: "overworld_pos_to_screen", // params: (int: 0, float/int: x, float/int: y, float/int: z, variable: outSX, variable: outSY, variable: outSZ)
+  13659: "get_entity_height", // params: (string/hash: EntityHandle) returns float height
+  13666: "get_dist_scale", // params: (string/hash: EntityHandle) returns float scale
+  5245: "is_element_move_animation_not_over", // params: (string/hash: Element) returns 1 if still occuring else 0  
+  13980: "get_gate_mode", // no params; official name, returns the gate mode as an int 0 = Battle Room, 1 = Speed Room, 2 = Expert Room, 3 = ???, 4 = Bizzare Room
+  15298: "generic_reserve_handle", // no params;
+  13906: "get_quest_item", // params: (string/hash?: QuestID, int/variable?: 0/variable? variable: outItemID, variable: outItemQty?)
+  5437: "assign_resource_rect", // params: (string/hash: elName, string/hash: resourceName, int: x, int: y, int: width, int: height)
+  2220: "set_coroutine", // params: (string/hash: function)
+  2221: "set_coroutine_ex", // params: (string/hash: function, ...any: ...params)
+  2223: "is_coroutine_set", // no params;
+  // update 27th April 2026
+  14801: "play_music5", // params: (string/int: musName/trackNumber)
+  5006: "set_element_input_enabled", // params: (hash/string: element, int: enabled)
+  5203: "set_element_scale_animated", // params: (hash/string: element, float: scaleX, float: scaleY, int/float: duration, int: easing)
+  6002: "create_effect",
+  4148: "ctrl_camera_tilt_interp",  // params: (int: layer, float: tiltAngle, float: duration, int: mode)
+  4145: "is_camera_tilt_not_over", // params: (int: layer)
+  5253: "set_element_pos_relative", // params: (hash/string: element, int: x, int: y) - sets the element position relative to it's parent
+  13155: "run_vehicle" // params: (int: vehicleType, int: unk, any: rideParam, hash/string: charaHandle, optional int: unkFlag) - YW3 ONWARDS! vehicleType 0 = Raft, 1 = Cart, 2 = Pony/Horse
+ // 240, 51, 41
 }
